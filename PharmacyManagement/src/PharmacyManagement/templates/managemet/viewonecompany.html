@@ -1,0 +1,13 @@
+{%  extends 'managemet/adminmain2.html' %}
+
+
+{% block content %}
+    <div>
+        <h1>Company Name:{{company.name}}</h1>
+        <p>License No:{{company.license_no}}</p>
+        <p>Address:{{company.address}}</p>
+        <p>Contact No:{{company.contact_no}}</p>
+        <p>Email:{{company.email}}</p>
+        <a href="{% url 'deletecompany' company.id %}">Remove Company?</a>
+    </div>
+{% endblock %}

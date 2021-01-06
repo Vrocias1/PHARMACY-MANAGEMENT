@@ -1,0 +1,20 @@
+{%  extends 'managemet/adminmain2.html' %}
+
+
+{% block content %}
+
+
+
+
+
+
+
+    <ul>
+        {% for i in companies %}
+        <li><a href="{% url 'viewonecompany' i.id %}">{{i.name}}</a></li>
+
+        {% endfor %}
+    </ul>
+
+
+{% endblock %}

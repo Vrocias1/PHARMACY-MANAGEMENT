@@ -1,0 +1,18 @@
+{%  extends 'managemet/adminmain2.html' %}
+
+
+{% block content %}
+    <h3>Name:{{name}}</h3>
+    <br/>
+    <br/>
+    <h3>Phone:{{phone}}</h3>
+    <br/>
+    <br/>
+    <h3>Address:{{address}}</h3>
+    <br/>
+    <br/>
+    <h3>Email:{{email}}</h3>
+    <br/>
+    <a href="{% url 'vieworderofcust' id %}">ViewOrders</a>
+    <a href="{% url 'deletecustomer' id %}">DeleteCustomer</a>
+{% endblock %}
